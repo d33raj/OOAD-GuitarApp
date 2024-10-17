@@ -10,8 +10,8 @@ namespace OOADGuitarApp
             InitializeInventory(inventory);
 
 
-            //GuitarSpec whatErinLikes = new GuitarSpec(Builder.FENDER, "Stratocaster", Types.ELECTRIC, Wood.ALDER, Wood.ALDER);
-            GuitarSpec whatErinLikes = new GuitarSpec(Builder.MARTIN, "D-18", Types.ELECTRIC, Wood.MAHOGANY, Wood.ADIRONDACK);
+            GuitarSpec whatErinLikes = new GuitarSpec(Builder.FENDER, "Stratocaster", Types.ELECTRIC, Wood.ALDER, Wood.ALDER);
+           // GuitarSpec whatErinLikes = new GuitarSpec(Builder.MARTIN, "D-18", Types.ACOUSTIC, Wood.MAHOGANY, Wood.ADIRONDACK);
 
             List<Guitar> matchingGuitars = inventory.Search(whatErinLikes);
             if (matchingGuitars.Count > 0)

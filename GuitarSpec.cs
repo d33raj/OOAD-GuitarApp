@@ -26,13 +26,9 @@ namespace OOADGuitarApp
 
         public bool Matches(GuitarSpec otherSpec)
         {
-            if (Builder != otherSpec.Builder) return false;
-            if ((Model != null) && (!Model.Equals(otherSpec.Model))) return false;
-            if (Type != otherSpec.Type) return false;
-            if (BackWood != otherSpec.BackWood) return false;
-            if (TopWood != otherSpec.TopWood) return false;
-
-            return true;
+            return Builder == otherSpec.Builder && Model == otherSpec.Model &&
+               Type == otherSpec.Type && BackWood == otherSpec.BackWood &&
+               TopWood == otherSpec.TopWood;
         }
     }
 
